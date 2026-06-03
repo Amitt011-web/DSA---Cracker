@@ -1,0 +1,17 @@
+class LinkedList1{
+          // ITERARTIVE METHOD //
+    static void print1(Node head) {
+        Node temp = head;
+        while(temp!=null) {
+            System.out.print(temp.data+" ");
+            temp = temp.next;
+        }
+    }
+
+       // RECURSIVE METHOD //
+    static void print2(Node head) {
+        if(head==null) return;
+        System.out.println(head.data);
+        print2(head.next);
+    }
+}
