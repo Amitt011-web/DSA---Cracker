@@ -19,4 +19,14 @@ class Array1{
         }
         return ans;
     }
+           //  METHOD 3  //
+    void reverse3(int[] arr){
+        int n = arr.length;
+        int i = 0, j = n-1;
+        while (i < j){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
 }
