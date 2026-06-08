@@ -1,52 +1,64 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>459. Repeated Substring Pattern</title>
+    <title>LeetCode 459 - Repeated Substring Pattern</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #eff0f6;
+            padding: 30px;
             margin: 0;
         }
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
         }
         .header {
-            background: linear-gradient(135deg, #2c3e50, #3498db);
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffa116, #f37335);
+            color: black;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            font-weight: bold;
         }
         .card {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            background: #282828;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            border: 1px solid #333;
         }
-        h2 { color: #2c3e50; margin-top: 0; }
+        h1, h2 { margin-top: 0; }
+        h2 { color: #ffa116; border-bottom: 1px solid #3e3e3e; padding-bottom: 10px; }
         code {
-            background: #edf2f7;
-            padding: 2px 6px;
+            background: #333;
+            padding: 3px 6px;
             border-radius: 4px;
-            color: #c7254e;
+            color: #ef476f;
+            font-family: monospace;
+        }
+        pre {
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #ffa116;
+            overflow-x: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>459. Repeated Substring Pattern</h1>
+            <h1 style="margin:0;">459. Repeated Substring Pattern</h1>
+            <span style="background:rgba(0,0,0,0.1); padding:4px 10px; border-radius:15px; font-size:14px;">Difficulty: Easy</span>
         </div>
         <div class="card">
-            <h2>📝 प्रॉब्लम का मतलब</h2>
-            <p>दी गई स्ट्रिंग में चेक करना है कि क्या कोई छोटा टुकड़ा बार-बार रिपीट होकर पूरी स्ट्रिंग को बना रहा है या नहीं।</p>
+            <h2>Problem Statement</h2>
+            <p>Given a string <code>s</code>, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.</p>
         </div>
     </div>
 </body>
