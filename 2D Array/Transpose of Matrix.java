@@ -26,7 +26,7 @@ Constraints:
 
 */
 
-//        SOLUTION     //
+//        SOLUTION 1    //
 
 class Solution {
     public ArrayList<ArrayList<Integer>> transpose(int[][] arr) {
@@ -41,3 +41,29 @@ class Solution {
         return list;
     }
 }
+
+
+//        SOLUTION 2    //    USING O(n) space
+int[][] transpose(int[][] arr) {
+     int[][] ans = new int[arr[0].length][arr.length];
+
+     for(int i = 0; i < ans.length; i++){
+         for(int j = 0; j < ans[0].length; j++){
+            ans[i][j] = arr[j][i];
+         }
+     }
+       return ans;
+}
+
+//        SOLUTION 3   // In Place and swaping int O(1) space
+
+ void  transpose2(int[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr[0].length; j++) {
+                int temp = arr[i][j];
+                arr[i][j] = arr[j][i];
+                arr[j][i] = temp;
+            }
+        }
+    }
+
